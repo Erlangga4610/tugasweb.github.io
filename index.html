@@ -1,0 +1,156 @@
+<html>
+<title>Home</title>
+<style type="text/css">
+    .left    { text-align: left;}
+    .right   { text-align: right;}
+    .center  { text-align: center;}
+    .justify { text-align: justify;}
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    ul{
+        position: relative;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    ul li{
+        display: inline;
+    }
+
+    ul li img{
+        margin: 10px;
+        width: 300px;
+        height: 250px;
+    }
+
+    article{
+      border: 1px solid silver;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-radius: 16px;
+    }
+ </style>
+ <style>
+    /*untuk teks heading di tag <body>*/
+    body
+    {
+        background-image: url('bg.jpg');
+        width: 100%;
+    }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+
+<body style="background-color: rgba(0, 122, 122, 0.589);">
+    <div class="w3-container">
+    <h2><img src="realmadrid.jpg" width="100%" height="60%"></h2>
+    </div>
+
+    <div class="w3-bar w3-blue w3-round-xxlarge">
+        <button style="margin: 10px;" class="w3-bar-item w3-button w3-round-xxlarge" onclick="openSite('Home')">Home</button> 
+        <button style="margin: 10px;" class="w3-bar-item w3-button w3-round-xxlarge" onclick="openSite('galery')">Galery</button>
+        <button style="margin: 10px;" class="w3-bar-item w3-button w3-round-xxlarge" onclick="openSite('piala')">Tropy</button>
+        <button style="margin: 10px;" class="w3-bar-item w3-button w3-round-xxlarge" onclick="openSite('history')">Sejarah</button>
+        <button style="margin: 10px;" class="w3-bar-item w3-button w3-round-xxlarge" onclick="openSite('About')">Creator</button>
+
+    </div>
+
+    <div id="Home" class="w3-container Site w3-animate-top" style="display:none">
+        <center>
+        <h2><b>Real Madrid C.F</b></h2>
+            <img src="logo.png" style="width: 30%;" alt="">
+        <article>
+            <p>Real Madrid Club de Fútbol, umumnya dikenal sebagai Real Madrid, adalah klub sepak bola profesional yang berbasis di Madrid,
+                Spanyol. Didirikan pada tahun 1902 sebagai Madrid Football Club, secara tradisional mengenakan kostum kandang putih.</p>
+            <a href="https://www.realmadrid.com/en-US">Klik untuk Selengkapnya</a>
+        </article>
+        </center>   
+    </div>
+
+    <div id="galery" class="w3-container Site w3-animate-fading" style="display:none">
+        <center> <h2><b>This Real Madrid</b></h2></center>
+            <ul>
+                <li><img src="1 (1).jpeg" alt=""></li>
+                <li><img src="1 (2).jpeg" alt=""></li>
+                <li><img src="1 (3).jpeg" alt=""></li>
+                <li><img src="4.jpeg" alt=""></li>
+                <li><img src="5.jpeg" alt=""></li>
+                <li><img src="6.jpeg" alt=""></li>
+                <li><img src="7.jpeg" alt=""></li>
+                <li><img src="8.jpeg" alt=""></li>
+            </ul>  
+    </div>
+
+    <div id="piala" class="w3-container Site w3-animate-right" style="display:none">
+        <center>
+            <h3><b>Tropy</b></h3>
+            <hr>
+            <img src="pialauclmadrid.jpg" style="height: 50%;" alt="">
+            <img src="alltrofy.jpg" style="height: 50%;" alt="">
+            <h2><b>Prestasi</b></h2>
+            <article>
+                <p class="justify">Per 15 Januari 2024, Real Madrid telah memenangi 35 kali gelar juara La Liga, 14 kali juara Piala Eropa/Liga Champions UEFA dan 20 Gelar Copa Del Rey. Klub ini juga menerima penghargaan Klub Terbaik Abad ke-20 menurut FIFA pada 23 Desember 2000.[117] Selain itu, Madrid juga berhasil menerima FIFA Order of Merit pada tahun 2004.[118] Sebagai juara lebih dari 5 kali Liga Champions, Real Madrid diperkenankan untuk mengenakan lencana kehormatan (badge of honours) pada kaus mereka ketika mereka bertanding pada pertandingan Liga Champions.[20]</p>
+            </article>
+        </center>   
+    </div>
+
+    <div id="Foto" class="w3-container Site w3-animate-zoom" style="display:none">
+        <h2><b></b></h2>
+        <img src="luffy.jpg">
+    </div>
+
+    <div id="About" class="w3-container Site w3-animate-zoom" style="display:none">
+        <center>
+            <h2><b>Tentang Saya</b></h2>
+            <hr>
+            <article>
+                <img class="w3-xlarge w3-circle" src="gil.jpeg" width="300px" height="30%">
+            <table>
+                <tr>
+                    <td>Gilang Erlangga - 10123082</td>
+                </tr>
+                <tr><td>Sukabumi, 05 Oktober 2004</td></tr>
+            </table>
+            <p>
+            <a href="https://www.instagram.com/aglrlngga_?igsh=MTNsN2NvMGRiZzU0bA=="><img src="ig.png" width="2%"><a></a>
+            </p>
+            </article>
+        </center>
+    </div>
+
+    <div id="history" class="w3-container Site w3-animate-left" style="display:none">
+        <center>
+        <h2><b>Sejarah</b></h2>
+        <hr>
+        <h5>Santiago Bernabéu Yeste dan kesuksesan di Eropa (1945–1978)</h5>
+        <img src="sejarah_real madrid.jpg" align="left">
+        <p class="justify">Real Madrid Club de Fútbol (pengucapan bahasa Spanyol: [reˈal maˈðɾið ˈkluβ ðe ˈfutβol]; Royal Madrid Football Club), umumnya dikenal sebagai Real Madrid, adalah klub sepak bola profesional yang berbasis di Madrid, Spanyol.
+
+            Didirikan pada tahun 1902 sebagai Madrid Football Club, secara tradisional mengenakan kostum kandang putih. Kata Real ("dari kerajaan") Spanyol dan dianugerahkan ke klub oleh Raja Alfonso XIII pada tahun 1920 bersama-sama dengan mahkota kerajaan di lambang klub. Klub ini telah memainkan pertandingan kandang di Stadion Santiago Bernabéu dengan kapasitas 85.454 di pusat kota Madrid sejak tahun 1947.
+            
+            Klub ini merupakan salah satu klub sepak bola terkaya di dunia dalam hal pendapatan, senilai €968,3 juta dan total aset yang senilai €7,2miliar (atau $7
+            
+            ,2 miliar) di 2019.[4][5] Ini adalah salah satu dari tiga klub untuk tidak pernah terdegradasi dari papan atas sepak bola Spanyol, bersama dengan Athletic Bilbao dan Barcelona club ini juga merupakan club dengan torehan piala UCL terbanyak. Real Madrid memiliki banyak persaingan lama, terutama El Clásico dengan Barcelona dan El Derbi madrileño dengan Atlético Madrid.
+            
+            Klub ini memantapkan dirinya sebagai kekuatan utama dalam sepak bola Spanyol dan Eropa selama tahun 1950. Di dalam negeri, Klub ini juga merupakan salah satu klub terbaik abad ke-20 menurut FIFA. Klub ini menjuarai Liga Champions 3 musim berturut-turut dibawah kepelatihan Zinedine Zidane dan dengan mesin golnya yaitu pemain terbaik dunia Cristiano Ronaldo. Dalam kompetisi domestik, klub ini telah meraih 35 gelar La Liga (rekor), 20 gelar Piala Raja Spanyol, 12 Piala Super Spanyol, 1 Copa Eva Duarte, 1 Copa de la Liga,[6]. Di kompetisi tingkat Eropa dan Dunia, klub ini telah meraih 14 gelar Piala Champions Eropa/Liga Champions UEFA (rekor), 2 Piala UEFA/Liga Eropa UEFA, 5 Piala Super UEFA, dan 9 kejuaraan dunia antar klub (3 Piala Interkontinental , 5 Piala Dunia Antarklub FIFA dan 1 Piala Ibero-American ).</p>
+            <a href="https://www.realmadrid.com/en-US">Klik Untuk Selengkapnya</a>
+        </center>
+    </div>
+
+    <script>
+    function openSite(namakota) {
+    var i;
+    var x = document.getElementsByClassName("Site");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    }
+    document.getElementById(namakota).style.display = "block";
+    }
+    </script>
+
+</body>
+</html>
